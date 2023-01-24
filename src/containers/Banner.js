@@ -41,7 +41,7 @@ function Banner(props) {
           </span>
         </div>
 
-        <div className='container max-w-7xl mx-auto md:px-7 relative '>
+        <div className='container mx-auto md:px-6 relative '>
           <div className='flex flex-wrap justify-center items-center'>
             <div className='w-full lg:w-1/2 p-4'>
               <div className='w-100 lg:max-w-lg text-center lg:text-left'>
