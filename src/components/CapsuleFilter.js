@@ -86,11 +86,11 @@ const CapsuleFilter = () => {
     return (
 
         <div className='container mx-auto '>
-            <div className='flex justify-items-stretch flex-col md:flex-row p-6 bg-slate-100 bg-opacity-20 rounded-md'>
+            <div className='flex justify-items-stretch items-center flex-col md:flex-row p-3 md:p-6 bg-slate-100 bg-opacity-20 rounded-md'>
                 <div className='w-full md:w-1/2'>
                     <Search />
                 </div>
-                <div className='w-full md:w-1/2 flex justify-end mt-5 md:mt-0'>
+                <div className='w-full md:w-1/2 flex justify-end'>
                     <DropdownButton buttonText={<FilterButton />}>
                         <div className='p-4'>
                             <h4 className='font-bold mb-2 text-xl'>Status</h4>

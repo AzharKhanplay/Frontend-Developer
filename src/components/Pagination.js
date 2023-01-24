@@ -13,7 +13,7 @@ function Pagination({ currentPage, totalPages, handlePageChange, perPageHandle }
       <div className='w-full flex flex-wrap px-4 mt-3 py-4  rounded-md justify-center'>
         <div className='w-full md:w-1/2'>
           <div className=''>
-            <label htmlFor='c_per_page' className='w-auto py-0 px-2 border-2 bg-gray-300  flex items-center justify-center max-w-[200px] rounded-sm'>Capsules per page:
+            <label htmlFor='c_per_page' className='w-auto py-0 px-2 border-2 bg-gray-300  flex items-center justify-center mx-auto md:mx-0 max-w-[210px] rounded-sm'>Capsules per page:
               <select id="c_per_page" className='border-0 bg-gray-300 text-black py-2 ml-2 px-0 outline-none  ' onChange={perPageHandle}>
                 <option value="8">8</option>
                 <option value="12">12</option>
@@ -24,7 +24,7 @@ function Pagination({ currentPage, totalPages, handlePageChange, perPageHandle }
           </div>
         </div>
         <div className='w-full md:w-1/2'>
-          <div className='pagination w-full flex items-center justify-end flex-wrap'>
+          <div className='pagination w-full flex items-center mt-3 md:mt-0 justify-center md:justify-end flex-wrap'>
             <button disabled={currentPage === 1}
               onClick={() => handlePageChange(currentPage - 1)}
               className=' bg-white text-sky-800 hover:bg-sky-800 hover:text-white py-2 px-4 cursor-pointer mr-2 my-2 rounded-md text-xl disabled:bg-gray-500 disabled:text-white'>

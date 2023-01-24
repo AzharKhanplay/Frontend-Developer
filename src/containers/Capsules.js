@@ -73,7 +73,7 @@ function Capsules() {
 
     return (
         <>
-            <section className='py-5 relative bg-yellow-600/80 bg-opacity/30 '>
+            <section className='py-5 relative bg-yellow-600/80 bg-opacity/30 min-h-[580px]'>
                 <div className=' absolute top-0 right-0 -bottom-12 left-0 z-0 overflow-hidden'>
                     <Stars />
                 </div>
