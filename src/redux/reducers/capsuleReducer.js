@@ -40,7 +40,7 @@ export const capsuleReducer = (state = initialState, { type, payload }) => {
             return { ...state, filteredCapsules };
         
         case actionTypes.SEARCH:
-            const searchTerm = payload.toLowerCase();
+            const searchTerm = payload.toLowerCase().trim();
             let searchedData = [];
             if(searchTerm){
                 searchedData = state.capsules.filter(c => {
