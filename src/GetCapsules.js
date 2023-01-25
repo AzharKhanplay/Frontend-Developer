@@ -9,7 +9,7 @@ function GetCapsules(props) {
   //geting the capsules
   const getCapsulesData = async () => {
     const jwt = await createJWT();
-    const API_ENDPOINt = "http://localhost:3300/spacex-capsules/rest/";
+    const API_ENDPOINt = "https://reinventmedia.in/spx/";
 
     const response = await fetch(API_ENDPOINt, {
       headers: {
