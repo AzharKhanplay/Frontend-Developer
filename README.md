@@ -19,9 +19,9 @@
 - Tailwind CSS
 
 ## Live URL
-```
+
 https://azhar-spacex.netlify.app
-```
+
 
 ## Setup
 To run this application, you will need to have Node.js and npm installed on your machine.
