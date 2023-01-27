@@ -7,7 +7,15 @@ export const setCapsules = (capsules) => {
         type: actionTypes.FETCH_CAPSULES,
         payload: capsules
     }
-};
+}
+
+//Action to handle Error in fetch api
+export const setFetchError = (error) => {
+    return {
+        type: actionTypes.FETCH_ERROR,
+        payload: error
+    }
+}
 
 //Action to filter the capsules
 export const filterCapsules = (filters) => {

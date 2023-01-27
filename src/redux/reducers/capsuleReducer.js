@@ -4,12 +4,16 @@ const initialState = {
     capsules: [],
     filteredCapsules: [],
     searchedData: [],
+    error: '',
 };
 
 export const capsuleReducer = (state = initialState, { type, payload }) => {
     switch (type) {
         case actionTypes.FETCH_CAPSULES:
             return { ...state, capsules: payload };
+
+        case actionTypes.FETCH_ERROR:
+            return { ...state, error: payload };
 
         case actionTypes.FILTER_CAPSULES:
             const capsulesList = state.capsules;

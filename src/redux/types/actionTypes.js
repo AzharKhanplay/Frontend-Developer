@@ -1,5 +1,6 @@
 export const actionTypes = {
     FETCH_CAPSULES: "FETCH_CAPSULES",
+    FETCH_ERROR: "FETCH_ERROR",
     FILTER_CAPSULES: "FILTER_CAPSULES",
     SEARCH: "SEARCH"
 
