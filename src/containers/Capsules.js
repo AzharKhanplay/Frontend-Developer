@@ -25,20 +25,18 @@ function Capsules() {
 
     //capsules list
     const capsulesList = capsules && capsules.map((capsule, i) => {
-        const { serial, type, status, last_update } = capsule;
         return (
             <div className='w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-4' key={i}>
-                <CapsuleCard key={i} serial={serial} type={type} status={status} last_update={last_update} handleClick={() => showModal(capsule)} />
+                <CapsuleCard id={i} {...capsule} handleClick={() => showModal(capsule)} />
             </div>
         )
     });
 
     //filteredCapsules list 
     const filteredCapsulesList = filteredCapsules && filteredCapsules.map((capsule, i) => {
-        const { serial, type, status, last_update } = capsule;
         return (
             <div className='w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-4' key={i}>
-                <CapsuleCard serial={serial} type={type} status={status} last_update={last_update} handleClick={() => showModal(capsule)} />
+                <CapsuleCard id={i} {...capsule} handleClick={() => showModal(capsule)} />
             </div>
         )
     });

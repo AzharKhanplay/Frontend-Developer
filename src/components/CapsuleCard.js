@@ -1,9 +1,9 @@
 import React from 'react';
 
 
-function CapsuleCard ({ serial, type, status, last_update, handleClick }) {
+function CapsuleCard ({ id, serial, type, status, last_update, handleClick }) {
     return (
-        <article className=" bg-sky-100 cursor-pointer border-0 border-white shadow-white shadow-sm rounded-lg overflow-hidden h-full " onClick={handleClick}>
+        <article key={id} className=" bg-sky-100 cursor-pointer border-0 border-white shadow-white shadow-sm rounded-lg overflow-hidden h-full " onClick={handleClick} data-testid={`capsule-${id}`}>
             <div className="px-6 py-4">
                 <span className='inline-block px-2 text-sm py-1 bg-sky-800 text-white rounded-md'>{serial}</span>
                 <h4 className="text-black py-2"><span className=' font-semibold'>Type:</span> {type}</h4>
